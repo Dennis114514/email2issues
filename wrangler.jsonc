@@ -1,7 +1,19 @@
 {
+  "$schema": "node_modules/wrangler/config-schema.json",
   "name": "email2issues",
   "main": "src/index.js",
-  "workers_dev": false,
-  "preview_urls": false,
-  "compatibility_date": "2025-05-23"
+  "compatibility_date": "2026-06-07",
+  "observability": {
+    "enabled": true
+  },
+  "send_email": [
+    {
+      "name": "SEND_EMAIL"
+    }
+  ],
+  "vars": {
+    "GITHUB_OWNER": "Dennis114514",
+    "GITHUB_REPO": "GenshinLore",
+    "FORWARD_TO": "dennis1111@126.com"
+  }
 }
